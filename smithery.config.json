@@ -1,0 +1,23 @@
+{
+  "name": "elevenlabs-mcp",
+  "description": "MCP server for ElevenLabs API - Comprehensive text-to-speech, voice generation, audio isolation and more",
+  "version": "1.0.0",
+  "category": "audio",
+  "tags": ["elevenlabs", "tts", "text-to-speech", "audio", "voice", "ai"],
+  "homepage": "https://github.com/yourusername/elevenlabs-mcp",
+  "author": {
+    "name": "Your Name",
+    "url": "https://github.com/yourusername"
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "title": "ElevenLabs API Key",
+        "description": "Your ElevenLabs API key. Get it from https://elevenlabs.io/app/settings/api-keys"
+      }
+    },
+    "required": ["apiKey"]
+  }
+}

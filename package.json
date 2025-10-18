@@ -1,0 +1,31 @@
+{
+  "name": "elevenlabs-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ElevenLabs API - text-to-speech, voice generation, audio isolation and more",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "smithery dev",
+    "build": "smithery build",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "elevenlabs",
+    "mcp",
+    "text-to-speech",
+    "tts",
+    "voice",
+    "audio",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "@smithery/sdk": "^1.7.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@smithery/cli": "^1.6.2"
+  }
+}
