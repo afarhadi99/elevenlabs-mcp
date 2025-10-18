@@ -2,11 +2,15 @@ name: elevenlabs-mcp
 version: 1.0.0
 description: MCP server for ElevenLabs API - Comprehensive text-to-speech, voice generation, audio isolation and more
 
-# Server configuration
-server:
-  entrypoint: src/index.js
-  runtime: nodejs
-  
+# Runtime configuration
+runtime: typescript
+
+# Start command
+startCommand:
+  command: node
+  args:
+    - src/index.js
+
 # Configuration schema for user inputs
 config:
   type: object
@@ -30,8 +34,3 @@ tags:
   - ai
   - sound-effects
   - voice-cloning
-
-# Build configuration
-build:
-  install: npm install
-  build: echo "No build step required"
