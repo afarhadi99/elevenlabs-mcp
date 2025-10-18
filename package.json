@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MCP server for ElevenLabs API - text-to-speech, voice generation, audio isolation and more",
   "main": "src/index.js",
+  "module": "src/index.js",
   "type": "module",
   "scripts": {
     "dev": "smithery dev",
