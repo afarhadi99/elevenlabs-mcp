@@ -1,0 +1,37 @@
+name: elevenlabs-mcp
+version: 1.0.0
+description: MCP server for ElevenLabs API - Comprehensive text-to-speech, voice generation, audio isolation and more
+
+# Server configuration
+server:
+  entrypoint: src/index.js
+  runtime: nodejs
+  
+# Configuration schema for user inputs
+config:
+  type: object
+  properties:
+    apiKey:
+      type: string
+      title: ElevenLabs API Key
+      description: Your ElevenLabs API key. Get it from https://elevenlabs.io/app/settings/api-keys
+      secret: true
+  required:
+    - apiKey
+
+# Metadata
+category: audio
+tags:
+  - elevenlabs
+  - tts
+  - text-to-speech
+  - audio
+  - voice
+  - ai
+  - sound-effects
+  - voice-cloning
+
+# Build configuration
+build:
+  install: npm install
+  build: echo "No build step required"
